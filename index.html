@@ -11,7 +11,7 @@
   <body>
     <header class="header">
       <!-- окно -->
-      <div class="object active">
+      <div class="object">
         <div class="button_width">
           <a href="#" class="object_link"
             ><button class="button_object">нужна помощь?</button></a
@@ -118,7 +118,9 @@
         <img src="./img/Logo@1X.png" alt="logo" class="menu_icon" />
         <div class="list_menu">
           <ul class="menu_list">
-            <li class="list_item"><a href="#" class="list_link">Услуги</a></li>
+            <li class="list_item">
+              <a href="#" class="list_link purpop">Услуги</a>
+            </li>
             <li class="list_item"><a href="#" class="list_link">Проекты</a></li>
             <li class="list_item"><a href="#" class="list_link">О нас</a></li>
             <li class="list_item"><a href="#" class="list_link">Цены</a></li>
@@ -130,7 +132,7 @@
             </li>
           </ul>
           <a href="#" class="list_link_purpop"
-            ><button class="purpop">Консультация</button></a
+            ><button class="consultetion">Консультация</button></a
           >
         </div>
       </nav>
@@ -250,31 +252,63 @@
       >
     </footer>
     <div class="spam">
-      <div class="spam_absolute">
-        <img
-          src="./img/Illustration12345.png"
-          alt="photo"
-          class="input_photo"
-        />
-        <div class="input_form">
-          <div>
-            <h2>с радостью обсудим вашу идею</h2>
-            <p>
-              просто расскажите о своих задумках, а мы придумаем, как их
-              воплотить!
+      <div class="input_form">
+        <button class="close_spam">Close</button>
+        <div class="spam_title--width">
+          <h2 class="spam_title">с радостью обсудим вашу идею</h2>
+          <p class="spam_subtitte">
+            Просто расскажите о своих задумках, а мы придумаем, как их
+            воплотить!
+          </p>
+        </div>
+        <form
+          action="http://formspree.io/frontend@rgb-agency.com.ua"
+          method="post"
+          class="form"
+        >
+          <div class="input_type">
+            <div class="input_type_text">
+              <input
+                type="text"
+                required
+                class="input_name"
+                placeholder="Представтесь, пожжалуйста"
+              />
+              <input
+                type="text"
+                required
+                class="input_number"
+                placeholder="+380 ( ) ___-__-__"
+              />
+            </div>
+            <textarea
+              class="textarea"
+              name="project"
+              id="project"
+              placeholder="Расскажите немного о Вашем проекте"
+            ></textarea>
+          </div>
+
+          <div class="file_input">
+            <img src="./img/file@1X.png" alt="photo" class="file_photo" />
+            <h3 class="file_title">Прикрепить файл</h3>
+          </div>
+          <div class="spam_footer">
+            <!-- <button class="spam_footer_button">Отправить</button> -->
+            <input type="submit" value="Отправить" class="spam_footer_button" />
+            <input type="checkbox" class="checkbox" />
+            <p class="spam_footer_title">
+              Я согласен на обработку
+              <span class="spam_footer_span">персональных данных</span>
             </p>
           </div>
-          <form action="#">
-            <div class="input_type_text">
-              <input type="text" />
-              <input type="text" />
-            </div>
-            <textarea name="project" id="" cols="30" rows="10"></textarea>
-          </form>
-        </div>
+        </form>
       </div>
     </div>
-    <button title="module" class="qwfwefwef">sfjbalfjblajfblajkb</button>
-    <script src="./js/script_open_object.js"></script>
+
+    <script type="module" src="./js/script_open_object.js"></script>
+    <script type="module" src="./js/script_cansel_object.js"></script>
+    <script type="module" src="./js/consultation_open.js"></script>
+    <script type="module" src="./js/consultation_cansel.js"></script>
   </body>
 </html>
